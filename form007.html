@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo.ico.ico" type="image/x-icon">
+    <title>Formulário 007</title>
+</head>
+<body>
+    <form action="cadastro" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estados</label>
+
+            <select name="est" id="iest">
+
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG" selected>Minas Gerais</option>
+                </optgroup>
+            
+            <optgroup label="Norte">
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+            </optgroup>
+        </select>
+        </p> 
+
+        <p>
+            <label for="iprof"> Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="msg">Menssagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
